@@ -10,7 +10,7 @@ android {
         }
     }
     compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "se.chai.cardboardremotedesktop"
         minSdkVersion 15
@@ -26,11 +26,14 @@ android {
             signingConfig signingConfigs.config
         }
     }
+    flavorDimensions "tier"
     productFlavors {
         lite {
+            dimension "tier"
             applicationId "se.chai.cardboardremotedesktop.lite"
         }
         pro {
+            dimension "tier"
             applicationId "se.chai.cardboardremotedesktop.pro"
         }
     }
@@ -38,7 +41,7 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.android.support:appcompat-v7:21.0.2'
     compile 'com.android.support:cardview-v7:21.0.2'
     compile 'com.android.support:recyclerview-v7:21.0.2'
     //noinspection GradleDynamicVersion
