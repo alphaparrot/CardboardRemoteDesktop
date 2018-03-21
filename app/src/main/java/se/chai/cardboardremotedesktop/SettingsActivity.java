@@ -9,8 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.google.vrtoolkit.cardboard.CardboardDeviceParams;
-import com.google.vrtoolkit.cardboard.CardboardView;
+import com.google.vr.sdk.base.GvrViewerParams;
+import com.google.vr.sdk.base.GvrView;
 
 
 public class SettingsActivity extends AppCompatActivity {
@@ -26,8 +26,8 @@ public class SettingsActivity extends AppCompatActivity {
         AdLogic ads = new AdLogic();
         ads.loadAds(this);
 
-        CardboardView view = new CardboardView(this);
-        CardboardDeviceParams params = view.getCardboardDeviceParams();
+        GvrView view = new GvrView(this);
+        GvrViewerParams params = view.getGvrViewerParams();
         SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(this).edit();//
         editor.putInt("pref_lensSpacing", (int) (params.getInterLensDistance() * 1000));
         editor.putInt("pref_lensScreenDist", (int) (params.getScreenToLensDistance() * 1000));
@@ -45,16 +45,16 @@ public class SettingsActivity extends AppCompatActivity {
     @Override
     public void onPause() {
         super.onPause();
-        CardboardView view = new CardboardView(this);
-        CardboardDeviceParams params = view.getCardboardDeviceParams();
+        GvrView view = new GvrView(this);
+        GvrViewerParams params = view.getGvrViewerParams();
         float lensSpacing = PreferenceManager.getDefaultSharedPreferences(this).getInt("pref_lensSpacing",(int) (params.getInterLensDistance() * 1000)) / 1000f;
         float lensScreenDist = PreferenceManager.getDefaultSharedPreferences(this).getInt("pref_lensScreenDist",(int) (params.getScreenToLensDistance() * 1000)) / 1000f;
         float lensVertDist = PreferenceManager.getDefaultSharedPreferences(this).getInt("pref_lensVertDist",(int) (params.getVerticalDistanceToLensCenter() * 1000)) / 1000f;
-        params = new CardboardDeviceParams(params);
+        params = new GvrViewerParams(params);
         params.setInterLensDistance(lensSpacing);
         params.setScreenToLensDistance(lensScreenDist);
         params.setVerticalDistanceToLensCenter(lensVertDist);
-        view.updateCardboardDeviceParams(params);
+        view.updateGvrViewerParams(params);
     }
 
     @Override

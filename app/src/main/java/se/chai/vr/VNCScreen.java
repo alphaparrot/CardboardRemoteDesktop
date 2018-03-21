@@ -1,5 +1,6 @@
 package se.chai.vr;
 
+import com.google.vr.sdk.base.Eye;
 import android.androidVNC.BitmapImplHint;
 import android.androidVNC.COLORMODEL;
 import android.androidVNC.ConnectionBean;
@@ -19,8 +20,6 @@ import android.view.Surface;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-
-import com.google.vrtoolkit.cardboard.Eye;
 
 import java.net.MalformedURLException;
 import java.net.URL;

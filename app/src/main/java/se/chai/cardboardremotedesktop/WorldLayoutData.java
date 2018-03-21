@@ -17,8 +17,7 @@
 package se.chai.cardboardremotedesktop;
 
 import android.util.Log;
-
-import com.google.vrtoolkit.cardboard.Eye;
+import com.google.vr.sdk.base.Eye;
 
 import java.io.InputStream;
 import java.nio.FloatBuffer;

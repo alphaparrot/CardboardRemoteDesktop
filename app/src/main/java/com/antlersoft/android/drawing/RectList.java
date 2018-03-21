@@ -283,7 +283,7 @@ public class RectList {
 		
 		NonOverlappingRects()
 		{
-			rectEntries = (ObjectPool.Entry<Rect>[]) new ObjectPool.Entry[MAX_RECTS];
+			rectEntries = new ObjectPool.Entry[MAX_RECTS];
 		}
 		
 		private void addOwnedRect(int owner, int direction, ObjectPool<Rect> pool, Rect r)

@@ -16,7 +16,7 @@
 
 package se.chai.cardboardtools;
 
-import com.google.vrtoolkit.cardboard.Eye;
+import com.google.vr.sdk.base.Eye;
 
 /**
  * Contains vertex, normal and color data.

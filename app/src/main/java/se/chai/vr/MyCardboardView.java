@@ -5,12 +5,12 @@ import android.opengl.Matrix;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
-import com.google.vrtoolkit.cardboard.CardboardView;
+import com.google.vr.sdk.base.GvrView;
 
 /**
  * Created by henrik on 15. 9. 1.
  */
-public class MyCardboardView extends CardboardView {
+public class MyCardboardView extends GvrView {
     private float mPreviousX, mPreviousY, rotX, rotY;
     private float[] rotMatrix;
     private boolean useManual;

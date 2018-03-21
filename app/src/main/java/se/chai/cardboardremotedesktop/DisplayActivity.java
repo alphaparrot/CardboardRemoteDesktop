@@ -16,11 +16,11 @@
 
 package se.chai.cardboardremotedesktop;
 
-import com.google.vrtoolkit.cardboard.CardboardActivity;
-import com.google.vrtoolkit.cardboard.CardboardView;
-import com.google.vrtoolkit.cardboard.Eye;
-import com.google.vrtoolkit.cardboard.HeadTransform;
-import com.google.vrtoolkit.cardboard.Viewport;
+import com.google.vr.sdk.base.GvrActivity;
+import com.google.vr.sdk.base.GvrView;
+import com.google.vr.sdk.base.Eye;
+import com.google.vr.sdk.base.HeadTransform;
+import com.google.vr.sdk.base.Viewport;
 
 import android.content.Context;
 import android.content.Intent;
@@ -65,7 +65,7 @@ import se.chai.vr.VNCScreen;
 /**
  * A Cardboard sample application.
  */
-public class DisplayActivity extends CardboardActivity implements CardboardView.StereoRenderer,
+public class DisplayActivity extends GvrActivity implements GvrView.StereoRenderer,
         OnTriggerListener, OnVideoSizeChangeListener {
 
     private static final int UI_POS_DOWN = 0;
@@ -199,9 +199,9 @@ public class DisplayActivity extends CardboardActivity implements CardboardView.
         setContentView(R.layout.common_ui);
         MyCardboardView cardboardView = (MyCardboardView) findViewById(R.id.cardboard_view);
 
-        cardboardView.setRestoreGLStateEnabled(false);
+        //cardboardView.setRestoreGLStateEnabled(false);
         cardboardView.setRenderer(this);
-        setCardboardView(cardboardView);
+        setGvrView(cardboardView);
 
         engine = new Engine(getResources());
 //        engine.debug = true;
@@ -294,7 +294,7 @@ public class DisplayActivity extends CardboardActivity implements CardboardView.
         screen = new VNCScreen(engine, this);
 
         if (PreferenceManager.getDefaultSharedPreferences(this).getBoolean("pref_DisableDist", false)) {
-            getCardboardView().setDistortionCorrectionEnabled(false);
+            getGvrView().setDistortionCorrectionEnabled(false);
         }
 
         screen.setOnVideoSizeChangeListener(this);
@@ -704,7 +704,7 @@ public class DisplayActivity extends CardboardActivity implements CardboardView.
         if (prefOrientationProviderString.equals("0")) {
             return mHeadViewSDK;
         } else if (prefOrientationProviderString.equals("1")) {
-            return ((MyCardboardView)getCardboardView()).getRotMatrix();
+            return ((MyCardboardView)getGvrView()).getRotMatrix();
         }
 
         //else

@@ -32,7 +32,6 @@ package android.androidVNC;
 import java.io.IOException;
 import java.util.zip.Inflater;
 
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -177,7 +176,7 @@ public class VncView extends AppCompatImageView {
 //                            pd.setMessage("Downloading first frame.\nPlease wait...");
 //                        }
 //                    });
-                    processNormalProtocol(getContext(), null, setModes);
+                    processNormalProtocol(getContext(), setModes);
 //                    processNormalProtocol(getContext(), pd, setModes);
 				} catch (Throwable e) {
 					if (maintainConnection) {
@@ -329,7 +328,7 @@ public class VncView extends AppCompatImageView {
 		}
 	}
 
-	public void processNormalProtocol(final Context context, ProgressDialog pd, final Runnable setModes) throws Exception {
+	public void processNormalProtocol(final Context context, final Runnable setModes) throws Exception {
 		try {
 			bitmapData.writeFullUpdateRequest(false);
 
