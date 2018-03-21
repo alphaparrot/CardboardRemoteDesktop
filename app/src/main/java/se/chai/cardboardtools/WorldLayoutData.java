@@ -16,8 +16,6 @@
 
 package se.chai.cardboardtools;
 
-import android.util.FloatMath;
-
 import com.google.vrtoolkit.cardboard.Eye;
 
 /**
@@ -180,39 +178,39 @@ public final class WorldLayoutData {
                 int i = 0;
                 //1
                 //x
-                verts[y * stride + x * 12 + i++] = FloatMath.cos(theta_start + x * theta_step) * FloatMath.cos(phi_start + y * phi_step) * 0.25f + xoff;
+                verts[y * stride + x * 12 + i++] = (float)Math.cos(theta_start + x * theta_step) * (float)Math.cos(phi_start + y * phi_step) * 0.25f + xoff;
                 //y
-                verts[y * stride + x * 12 + i++] = FloatMath.sin(phi_start + y * phi_step) * yoff + yoff;
+                verts[y * stride + x * 12 + i++] = (float)Math.sin(phi_start + y * phi_step) * yoff + yoff;
 
                 //2
                 //x
-                verts[y * stride + x * 12 + i++] = FloatMath.cos(theta_start + x * theta_step) * FloatMath.cos(phi_start + (y + 1) * phi_step) * 0.25f + xoff;
+                verts[y * stride + x * 12 + i++] = (float)Math.cos(theta_start + x * theta_step) * (float)Math.cos(phi_start + (y + 1) * phi_step) * 0.25f + xoff;
                 //y
-                verts[y * stride + x * 12 + i++] = FloatMath.sin(phi_start + (y + 1) * phi_step) * yoff + yoff;
+                verts[y * stride + x * 12 + i++] = (float)Math.sin(phi_start + (y + 1) * phi_step) * yoff + yoff;
 
                 //3
                 //x
-                verts[y * stride + x * 12 + i++] = FloatMath.cos(theta_start + (x + 1) * theta_step) * FloatMath.cos(phi_start + y * phi_step) * 0.25f + xoff;
+                verts[y * stride + x * 12 + i++] = (float)Math.cos(theta_start + (x + 1) * theta_step) * (float)Math.cos(phi_start + y * phi_step) * 0.25f + xoff;
                 //y
-                verts[y * stride + x * 12 + i++] = FloatMath.sin(phi_start + y * phi_step) * yoff + yoff;
+                verts[y * stride + x * 12 + i++] = (float)Math.sin(phi_start + y * phi_step) * yoff + yoff;
 
                 //4
                 //x
-                verts[y * stride + x * 12 + i++] = FloatMath.cos(theta_start + (x + 1) * theta_step) * FloatMath.cos(phi_start + y * phi_step) * 0.25f + xoff;
+                verts[y * stride + x * 12 + i++] = (float)Math.cos(theta_start + (x + 1) * theta_step) * (float)Math.cos(phi_start + y * phi_step) * 0.25f + xoff;
                 //y
-                verts[y * stride + x * 12 + i++] = FloatMath.sin(phi_start + y * phi_step) * yoff + yoff;
+                verts[y * stride + x * 12 + i++] = (float)Math.sin(phi_start + y * phi_step) * yoff + yoff;
 
                 //5
                 //x
-                verts[y * stride + x * 12 + i++] = FloatMath.cos(theta_start + x * theta_step) * FloatMath.cos(phi_start + (y + 1) * phi_step) * 0.25f + xoff;
+                verts[y * stride + x * 12 + i++] = (float)Math.cos(theta_start + x * theta_step) * (float)Math.cos(phi_start + (y + 1) * phi_step) * 0.25f + xoff;
                 //y
-                verts[y * stride + x * 12 + i++] = FloatMath.sin(phi_start + (y + 1) * phi_step) * yoff + yoff;
+                verts[y * stride + x * 12 + i++] = (float)Math.sin(phi_start + (y + 1) * phi_step) * yoff + yoff;
 
                 //6
                 //x
-                verts[y * stride + x * 12 + i++] = FloatMath.cos(theta_start + (x + 1) * theta_step) * FloatMath.cos(phi_start + (y + 1) * phi_step) * 0.25f + xoff;
+                verts[y * stride + x * 12 + i++] = (float)Math.cos(theta_start + (x + 1) * theta_step) * (float)Math.cos(phi_start + (y + 1) * phi_step) * 0.25f + xoff;
                 //y
-                verts[y * stride + x * 12 + i] = FloatMath.sin(phi_start + (y + 1) * phi_step) * yoff + yoff;
+                verts[y * stride + x * 12 + i] = (float)Math.sin(phi_start + (y + 1) * phi_step) * yoff + yoff;
             }
         }
 
@@ -246,51 +244,51 @@ public final class WorldLayoutData {
                 int i = 0;
                 // vert 1
                 // x
-                verts[y * stride + x * 18 + i++] = FloatMath.cos(theta_start + x * theta_step) * FloatMath.cos(phi_start + y * phi_step);
+                verts[y * stride + x * 18 + i++] = (float)Math.cos(theta_start + x * theta_step) * (float)Math.cos(phi_start + y * phi_step);
                 // y
-                verts[y * stride + x * 18 + i++] = FloatMath.sin(phi_start + y * phi_step);
+                verts[y * stride + x * 18 + i++] = (float)Math.sin(phi_start + y * phi_step);
                 // z
-                verts[y * stride + x * 18 + i++] = FloatMath.sin(theta_start + x * theta_step) * FloatMath.cos(phi_start + y * phi_step);
+                verts[y * stride + x * 18 + i++] = (float)Math.sin(theta_start + x * theta_step) * (float)Math.cos(phi_start + y * phi_step);
 
                 // vert 2
                 // x
-                verts[y * stride + x * 18 + i++] = FloatMath.cos(theta_start + x * theta_step) * FloatMath.cos(phi_start + (y + 1) * phi_step);
+                verts[y * stride + x * 18 + i++] = (float)Math.cos(theta_start + x * theta_step) * (float)Math.cos(phi_start + (y + 1) * phi_step);
                 // y
-                verts[y * stride + x * 18 + i++] = FloatMath.sin(phi_start + (y + 1) * phi_step);
+                verts[y * stride + x * 18 + i++] = (float)Math.sin(phi_start + (y + 1) * phi_step);
                 // z
-                verts[y * stride + x * 18 + i++] = FloatMath.sin(theta_start + x * theta_step) * FloatMath.cos(phi_start + (y + 1) * phi_step);
+                verts[y * stride + x * 18 + i++] = (float)Math.sin(theta_start + x * theta_step) * (float)Math.cos(phi_start + (y + 1) * phi_step);
 
                 // vert 3
                 // x
-                verts[y * stride + x * 18 + i++] = FloatMath.cos(theta_start + (x + 1) * theta_step) * FloatMath.cos(phi_start + y * phi_step);
+                verts[y * stride + x * 18 + i++] = (float)Math.cos(theta_start + (x + 1) * theta_step) * (float)Math.cos(phi_start + y * phi_step);
                 // y
-                verts[y * stride + x * 18 + i++] = FloatMath.sin(phi_start + y * phi_step);
+                verts[y * stride + x * 18 + i++] = (float)Math.sin(phi_start + y * phi_step);
                 // z
-                verts[y * stride + x * 18 + i++] = FloatMath.sin(theta_start + (x + 1) * theta_step) * FloatMath.cos(phi_start + y * phi_step);
+                verts[y * stride + x * 18 + i++] = (float)Math.sin(theta_start + (x + 1) * theta_step) * (float)Math.cos(phi_start + y * phi_step);
 
                 // vert 4
                 // x
-                verts[y * stride + x * 18 + i++] = FloatMath.cos(theta_start + (x + 1) * theta_step) * FloatMath.cos(phi_start + y * phi_step);
+                verts[y * stride + x * 18 + i++] = (float)Math.cos(theta_start + (x + 1) * theta_step) * (float)Math.cos(phi_start + y * phi_step);
                 // y
-                verts[y * stride + x * 18 + i++] = FloatMath.sin(phi_start + y * phi_step);
+                verts[y * stride + x * 18 + i++] = (float)Math.sin(phi_start + y * phi_step);
                 // z
-                verts[y * stride + x * 18 + i++] = FloatMath.sin(theta_start + (x + 1) * theta_step) * FloatMath.cos(phi_start + y * phi_step);
+                verts[y * stride + x * 18 + i++] = (float)Math.sin(theta_start + (x + 1) * theta_step) * (float)Math.cos(phi_start + y * phi_step);
 
                 // vert 5
                 // x
-                verts[y * stride + x * 18 + i++] = FloatMath.cos(theta_start + x * theta_step) * FloatMath.cos(phi_start + (y + 1) * phi_step);
+                verts[y * stride + x * 18 + i++] = (float)Math.cos(theta_start + x * theta_step) * (float)Math.cos(phi_start + (y + 1) * phi_step);
                 // y
-                verts[y * stride + x * 18 + i++] = FloatMath.sin(phi_start + (y + 1) * phi_step);
+                verts[y * stride + x * 18 + i++] = (float)Math.sin(phi_start + (y + 1) * phi_step);
                 // z
-                verts[y * stride + x * 18 + i++] = FloatMath.sin(theta_start + x * theta_step) * FloatMath.cos(phi_start + (y + 1) * phi_step);
+                verts[y * stride + x * 18 + i++] = (float)Math.sin(theta_start + x * theta_step) * (float)Math.cos(phi_start + (y + 1) * phi_step);
 
                 // vert 6
                 // x
-                verts[y * stride + x * 18 + i++] = FloatMath.cos(theta_start + (x + 1) * theta_step) * FloatMath.cos(phi_start + (y + 1) * phi_step);
+                verts[y * stride + x * 18 + i++] = (float)Math.cos(theta_start + (x + 1) * theta_step) * (float)Math.cos(phi_start + (y + 1) * phi_step);
                 // y
-                verts[y * stride + x * 18 + i++] = FloatMath.sin(phi_start + (y + 1) * phi_step);
+                verts[y * stride + x * 18 + i++] = (float)Math.sin(phi_start + (y + 1) * phi_step);
                 // z
-                verts[y * stride + x * 18 + i] = FloatMath.sin(theta_start + (x + 1) * theta_step) * FloatMath.cos(phi_start + (y + 1) * phi_step);
+                verts[y * stride + x * 18 + i] = (float)Math.sin(theta_start + (x + 1) * theta_step) * (float)Math.cos(phi_start + (y + 1) * phi_step);
 
 //                for (i=0; i<6; i++) {
 //                    System.out.println("coords, x="+x+", y="+y+", i="+i);

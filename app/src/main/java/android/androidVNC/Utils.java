@@ -66,7 +66,7 @@ public class Utils {
 	public static void showMessage(Context _context, String title, String message, int icon, DialogInterface.OnClickListener ackHandler) {
 		AlertDialog.Builder builder = new AlertDialog.Builder(_context);
 		builder.setTitle(title);
-		builder.setMessage(Html.fromHtml(message));
+		builder.setMessage(Html.fromHtml(message, Html.FROM_HTML_MODE_LEGACY));
 		builder.setCancelable(false);
 		builder.setPositiveButton("Acknowledged", ackHandler);
 		builder.setIcon(icon);

@@ -1,7 +1,5 @@
 package se.chai.vr;
 
-import android.util.FloatMath;
-
 /**
  * Created by henrik on 15. 1. 30.
  */
@@ -56,7 +54,7 @@ public class Vec4f {
     }
 
     public static float[] normalize(float v[]) {
-        float mag = FloatMath.sqrt(v[0]*v[0]+v[1]*v[1]+v[2]*v[2]+v[3]*v[3]);
+        float mag = (float)Math.sqrt(v[0]*v[0]+v[1]*v[1]+v[2]*v[2]+v[3]*v[3]);
         return mul(1/mag, v);
     }
 
@@ -85,7 +83,7 @@ public class Vec4f {
         float pitch = (float) Math.asin(mHeadView[6]);
         float roll;
         float yaw;
-        if (FloatMath.sqrt(1.0F - mHeadView[6] * mHeadView[6]) >= 0.01F) {
+        if ( (float) Math.sqrt(1.0F - mHeadView[6] * mHeadView[6]) >= 0.01F) {
             yaw = (float) Math.atan2(-mHeadView[2],
                     mHeadView[10]);
             roll = (float) Math.atan2(-mHeadView[4], mHeadView[5]);

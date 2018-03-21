@@ -80,7 +80,8 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder
         public void onClick(View v) {
             if (v == editicon) {
                 System.out.println("Launch edit intent");
-                ServerData data = ServerList.getServerList().get(getPosition());
+                //might be getAdaptorPosition
+                ServerData data = ServerList.getServerList().get(getLayoutPosition());
                 Intent myIntent = new Intent(v.getContext(), EditActivity.class);
                 myIntent.putExtra("id", data.id);
                 myIntent.putExtra("name", data.name);
@@ -99,7 +100,7 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder
                 alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int whichButton) {
                         //Your action here
-                        myListener.removeAt(getPosition());
+                        myListener.removeAt(getLayoutPosition());
                     }
                 });
 
@@ -120,7 +121,7 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder
                 myIntent.putExtra("projectionType", "Square");
 //                myIntent.putExtra("datasource", datasource);
 
-                ServerData data = ServerList.getServerList().get(getPosition());
+                ServerData data = ServerList.getServerList().get(getLayoutPosition());
                 myIntent.putExtra("host", data.host);
                 myIntent.putExtra("username", data.username);
                 myIntent.putExtra("password", data.password);

@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Html;
@@ -22,7 +22,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,11 +75,11 @@ public class MainActivity extends ActionBarActivity {
             TextView textView = null;
             if (!BuildConfig.FLAVOR.equals(getString(R.string.variant_name_pro))) {
                 textView = (TextView) messageView.findViewById(R.id.about_fullversion);
-                textView.setText(Html.fromHtml(getString(R.string.app_about_fullversion)));
+                textView.setText(Html.fromHtml(getString(R.string.app_about_fullversion), Html.FROM_HTML_MODE_LEGACY));
             }
 
             TextView textView2 = (TextView) messageView.findViewById(R.id.about_credits);
-            textView2.setText(Html.fromHtml(getString(R.string.app_credits)));
+            textView2.setText(Html.fromHtml(getString(R.string.app_credits), Html.FROM_HTML_MODE_LEGACY));
 
             new AlertDialog.Builder(this)
                     .setTitle(getString(R.string.app_name))

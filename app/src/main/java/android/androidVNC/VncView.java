@@ -34,29 +34,24 @@ import java.util.zip.Inflater;
 
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.Paint.Style;
-import android.graphics.SurfaceTexture;
 import android.os.Handler;
 import android.util.AttributeSet;
 import android.util.Log;
-import android.view.Display;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.Surface;
-import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.Toast;
+import android.support.v7.widget.AppCompatImageView;
 
 import com.antlersoft.android.bc.BCFactory;
 
 
-public class VncView extends ImageView {
+public class VncView extends AppCompatImageView {
 	private final static String TAG = "VncCanvas";
 	private final static boolean LOCAL_LOGV = true;
 	

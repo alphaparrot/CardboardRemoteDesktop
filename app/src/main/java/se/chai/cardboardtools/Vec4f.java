@@ -1,7 +1,5 @@
 package se.chai.cardboardtools;
 
-import android.util.FloatMath;
-
 /**
  * Created by henrik on 15. 1. 30.
  */
@@ -56,7 +54,7 @@ public class Vec4f {
     }
 
     public static float[] normalize(float v[]) {
-        float mag = FloatMath.sqrt(v[0]*v[0]+v[1]*v[1]+v[2]*v[2]+v[3]*v[3]);
+        float mag = (float)Math.sqrt(v[0]*v[0]+v[1]*v[1]+v[2]*v[2]+v[3]*v[3]);
         return mul(1/mag, v);
     }
 }

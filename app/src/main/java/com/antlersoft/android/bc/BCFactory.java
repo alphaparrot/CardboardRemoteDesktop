@@ -28,14 +28,7 @@ public class BCFactory {
 	 */
 	int getSdkVersion()
 	{
-		try
-		{
-			return Integer.parseInt(android.os.Build.VERSION.SDK);
-		}
-		catch (NumberFormatException nfe)
-		{
-			return 1;
-		}
+		return android.os.Build.VERSION.SDK_INT;
 	}
 	
 	/**
