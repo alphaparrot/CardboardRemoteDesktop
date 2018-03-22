@@ -97,7 +97,7 @@ public class DisplayActivity extends GvrActivity implements GvrView.StereoRender
 
     ArrayList<ButtonThing> buttonList;
 
-    private static final String TAG = "MainActivity";
+    private static final String TAG = "DisplayActivity";
 
     private static final float Z_NEAR = 0.1f;
     private static final float Z_FAR = 100.0f;
@@ -200,7 +200,10 @@ public class DisplayActivity extends GvrActivity implements GvrView.StereoRender
         MyCardboardView cardboardView = (MyCardboardView) findViewById(R.id.cardboard_view);
 
         //cardboardView.setRestoreGLStateEnabled(false);
+        //cardboardView.setEGLConfigChooser(8, 8, 8, 8, 16, 8);
         cardboardView.setRenderer(this);
+        cardboardView.setTransitionViewEnabled(true);
+        cardboardView.enableCardboardTriggerEmulation();
         setGvrView(cardboardView);
 
         engine = new Engine(getResources());
