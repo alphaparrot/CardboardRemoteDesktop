@@ -16,7 +16,7 @@
 #   public *;
 #}
 
--keep class com.google.vrtoolkit.cardboard.** { *; }
+-keep class com.google.vr.sdk.** { *; }
 -keep class com.antlersoft.android.** { *; }
 -keep class se.chai.** { *; }
 -dontwarn com.google.**
