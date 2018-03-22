@@ -355,7 +355,8 @@ public class VNCScreen extends TexturedThing implements SurfaceTexture.OnFrameAv
 
     public void onPause() {
         if (vncView != null) {
-            vncView.closeConnection();
+            //vncView.closeConnection();
+            Log.d("VNC", "Paused");
         }
     }
 

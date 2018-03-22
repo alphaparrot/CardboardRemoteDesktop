@@ -202,8 +202,8 @@ public class DisplayActivity extends GvrActivity implements GvrView.StereoRender
         //cardboardView.setRestoreGLStateEnabled(false);
         //cardboardView.setEGLConfigChooser(8, 8, 8, 8, 16, 8);
         cardboardView.setRenderer(this);
-        cardboardView.setTransitionViewEnabled(true);
-        cardboardView.enableCardboardTriggerEmulation();
+        cardboardView.setTransitionViewEnabled(false);
+        //cardboardView.enableCardboardTriggerEmulation();
         setGvrView(cardboardView);
 
         engine = new Engine(getResources());
