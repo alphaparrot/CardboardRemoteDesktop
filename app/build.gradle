@@ -48,5 +48,5 @@ dependencies {
     //noinspection GradleDynamicVersion
     //    compile files('libs/cardboard.jar')
     implementation 'com.google.android.gms:play-services-vision:12.0.0'
-    compile 'com.google.vr:sdk-base:1.10.0'
+    compile 'com.google.vr:sdk-base:1.130.0'
 }
