@@ -21,6 +21,8 @@ import com.google.vr.sdk.base.GvrView;
 import com.google.vr.sdk.base.Eye;
 import com.google.vr.sdk.base.HeadTransform;
 import com.google.vr.sdk.base.Viewport;
+import com.google.vr.sdk.controller.Controller;
+import com.google.vr.sdk.controller.ControllerManager;
 
 import android.content.Context;
 import android.content.Intent;
@@ -33,6 +35,7 @@ import android.media.AudioManager;
 import android.opengl.GLES20;
 import android.opengl.Matrix;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.SystemClock;
 import android.os.Vibrator;
 import android.preference.PreferenceManager;
@@ -93,6 +96,15 @@ public class DisplayActivity extends GvrActivity implements GvrView.StereoRender
     private ButtonThing uiBackGround;
     private Cursor aimPoint;
 
+    // These two objects are the primary APIs for interacting with the Daydream controller.
+    private ControllerManager controllerManager;
+    private Controller controller;
+
+    // The various events we need to handle happen on arbitrary threads. They need to be reposted to
+    // the UI thread in order to manipulate the TextViews. This is only required if your app needs to
+    // perform actions on the UI thread in response to controller events.
+    private Handler uiHandler = new Handler();
+
     private EnvironmentThing bgEnv;
 
     ArrayList<ButtonThing> buttonList;
@@ -117,7 +129,7 @@ public class DisplayActivity extends GvrActivity implements GvrView.StereoRender
     private float[] mHeadViewUse;
     private float[] mModelViewProjection;
     private float[] mModelView;
-    private float[] mOffsetView;
+    private float[] mOffsetView; //set with daydream remote
 
     private int mScore = 0;
     private float mObjectDistance = 12f;
@@ -196,7 +208,8 @@ public class DisplayActivity extends GvrActivity implements GvrView.StereoRender
         b = Color.blue(bgColor)/255f;
         a = Color.alpha(bgColor)/255f;
 
-        setContentView(R.layout.common_ui);        MyCardboardView cardboardView = (MyCardboardView) findViewById(R.id.cardboard_view);
+        setContentView(R.layout.common_ui);
+        MyCardboardView cardboardView = (MyCardboardView) findViewById(R.id.cardboard_view);
 
         //cardboardView.setRestoreGLStateEnabled(false);
         //cardboardView.setEGLConfigChooser(8, 8, 8, 8, 16, 8);
@@ -204,6 +217,16 @@ public class DisplayActivity extends GvrActivity implements GvrView.StereoRender
         cardboardView.setTransitionViewEnabled(false);
         //cardboardView.enableCardboardTriggerEmulation();
         cardboardView.setNeckModelEnabled(true);
+
+        // Start the ControllerManager and acquire a Controller object which represents a single
+        // physical controller. Bind our listener to the ControllerManager and Controller.
+        EventListener listener = new EventListener();
+        controllerManager = new ControllerManager(this, listener);
+        controller = controllerManager.getController();
+        controller.setEventListener(listener);
+        controllerManager.start(); //start later...
+
+        Log.i(TAG, "Listening to Controller: " + controller);
 
         setGvrView(cardboardView);
 
@@ -718,4 +741,63 @@ public class DisplayActivity extends GvrActivity implements GvrView.StereoRender
         return m;
     }
 
+    // We receive all events from the Controller through this listener. In this example, our
+    // listener handles both ControllerManager.EventListener and Controller.EventListener events.
+    // This class is also a Runnable since the events will be reposted to the UI thread.
+    private class EventListener extends Controller.EventListener
+            implements ControllerManager.EventListener, Runnable {
+
+        // The status of the overall controller API. This is primarily used for error handling since
+        // it rarely changes.
+        private String apiStatus;
+
+        // The state of a specific Controller connection.
+        private int controllerState = Controller.ConnectionStates.DISCONNECTED;
+
+        @Override
+        public void onApiStatusChanged(int state) {
+            apiStatus = ControllerManager.ApiStatus.toString(state);
+            uiHandler.post(this);
+        }
+
+        @Override
+        public void onConnectionStateChanged(int state) {
+            controllerState = state;
+            uiHandler.post(this);
+        }
+
+        @Override
+        public void onRecentered() {
+            // In a real GVR application, this would have implicitly called recenterHeadTracker().
+            // Most apps don't care about this, but apps that want to implement custom behavior when a
+            // recentering occurs should use this callback.
+            // controllerOrientationView.resetYaw();
+        }
+
+        @Override
+        public void onUpdate() {
+            uiHandler.post(this);
+        }
+
+        // Process state to UI events.
+        @Override
+        public void run() {
+            controller.update();
+
+            /*
+            Log.v(TAG, String.format("[%s][%s][%s][%s][%s]",
+                    controller.appButtonState ? "A" : " ",
+                    controller.homeButtonState ? "H" : " ",
+                    controller.clickButtonState ? "T" : " ",
+                    controller.volumeUpButtonState ? "+" : " ",
+                    controller.volumeDownButtonState ? "-" : " "));
+            */
+            if (controller.clickButtonState) {
+                Log.i(TAG, "attempting to set orientation");
+                //use daydream remote to rotate our world
+                controller.orientation.toRotationMatrix(mOffsetView);
+                moveall();
+            }
+        }
+    }
 }

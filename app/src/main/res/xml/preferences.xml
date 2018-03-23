@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:chai="http://cardboardremotedesktop.chai.se">
     <CheckBoxPreference
         android:defaultValue="false"
@@ -52,10 +53,10 @@
     <!--    </PreferenceCategory>-->
     <PreferenceCategory android:title="@string/pref_category_headset_title">
         <ListPreference
-            android:key="pref_orientationProvider"
+            android:defaultValue="0"
             android:entries="@array/pref_orientationProvider_entries"
             android:entryValues="@array/pref_orientationProvider_values"
-            android:defaultValue="0"
+            android:key="pref_orientationProvider"
             android:title="@string/pref_orientationProvider_title" />
         <se.chai.cardboardremotedesktop.SeekBarPreference
             android:key="pref_lensSpacing"
