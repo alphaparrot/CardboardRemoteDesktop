@@ -196,14 +196,15 @@ public class DisplayActivity extends GvrActivity implements GvrView.StereoRender
         b = Color.blue(bgColor)/255f;
         a = Color.alpha(bgColor)/255f;
 
-        setContentView(R.layout.common_ui);
-        MyCardboardView cardboardView = (MyCardboardView) findViewById(R.id.cardboard_view);
+        setContentView(R.layout.common_ui);        MyCardboardView cardboardView = (MyCardboardView) findViewById(R.id.cardboard_view);
 
         //cardboardView.setRestoreGLStateEnabled(false);
         //cardboardView.setEGLConfigChooser(8, 8, 8, 8, 16, 8);
         cardboardView.setRenderer(this);
         cardboardView.setTransitionViewEnabled(false);
         //cardboardView.enableCardboardTriggerEmulation();
+        cardboardView.setNeckModelEnabled(true);
+
         setGvrView(cardboardView);
 
         engine = new Engine(getResources());
