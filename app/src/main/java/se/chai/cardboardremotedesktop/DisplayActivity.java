@@ -23,17 +23,23 @@ import com.google.vr.sdk.base.HeadTransform;
 import com.google.vr.sdk.base.Viewport;
 import com.google.vr.sdk.controller.Controller;
 import com.google.vr.sdk.controller.ControllerManager;
+import com.google.vr.sdk.widgets.pano.VrPanoramaEventListener;
+import com.google.vr.sdk.widgets.pano.VrPanoramaView;
+import com.google.vr.sdk.widgets.pano.VrPanoramaView.Options;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.hardware.SensorManager;
 import android.media.AudioManager;
+import android.net.Uri;
 import android.opengl.GLES20;
 import android.opengl.Matrix;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
@@ -41,12 +47,18 @@ import android.os.Vibrator;
 import android.preference.PreferenceManager;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.util.Pair;
 import android.view.KeyEvent;
+import android.widget.Toast;
 
 import org.hitlabnz.sensor_fusion_demo.orientationProvider.CalibratedGyroscopeProvider;
 import org.hitlabnz.sensor_fusion_demo.orientationProvider.ImprovedOrientationSensor2Provider;
 import org.hitlabnz.sensor_fusion_demo.orientationProvider.OrientationProvider;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 
 import javax.microedition.khronos.egl.EGLConfig;
@@ -95,6 +107,22 @@ public class DisplayActivity extends GvrActivity implements GvrView.StereoRender
     // special
     private ButtonThing uiBackGround;
     private Cursor aimPoint;
+
+    // declarations for panorama images
+
+    private VrPanoramaView panoWidgetView;
+    /**
+     * Arbitrary variable to track load status. In this example, this variable should only be accessed
+     * on the UI thread. In a real app, this variable would be code that performs some UI actions when
+     * the panorama is fully loaded.
+     */
+    public boolean loadImageSuccessful;
+    /** Tracks the file to be loaded across the lifetime of this app. **/
+    private Uri fileUri;
+    /** Configuration information for the panorama. **/
+    private Options panoOptions = new Options();
+    private ImageLoaderTask backgroundImageLoaderTask;
+
 
     // These two objects are the primary APIs for interacting with the Daydream controller.
     private ControllerManager controllerManager;
@@ -208,6 +236,9 @@ public class DisplayActivity extends GvrActivity implements GvrView.StereoRender
         b = Color.blue(bgColor)/255f;
         a = Color.alpha(bgColor)/255f;
 
+        panoWidgetView = (VrPanoramaView) findViewById(R.id.pano_view);
+        panoWidgetView.setEventListener(new ActivityEventListener());
+
         setContentView(R.layout.common_ui);
         MyCardboardView cardboardView = (MyCardboardView) findViewById(R.id.cardboard_view);
 
@@ -227,6 +258,20 @@ public class DisplayActivity extends GvrActivity implements GvrView.StereoRender
         controllerManager.start(); //start later...
 
         Log.i(TAG, "Listening to Controller: " + controller);
+
+        Log.i(TAG, "Using default pano image.");
+        fileUri = null;
+        panoOptions.inputType = Options.TYPE_MONO;
+
+        // Load the bitmap in a background thread to avoid blocking the UI thread. This operation can
+        // take 100s of milliseconds.
+        if (backgroundImageLoaderTask != null) {
+            // Cancel any task from a previous intent sent to this activity.
+            backgroundImageLoaderTask.cancel(true);
+        }
+        backgroundImageLoaderTask = new ImageLoaderTask();
+        backgroundImageLoaderTask.execute(Pair.create(fileUri, panoOptions));
+
 
         setGvrView(cardboardView);
 
@@ -626,6 +671,7 @@ public class DisplayActivity extends GvrActivity implements GvrView.StereoRender
 
     @Override
     public void onPause() {
+        panoWidgetView.pauseRendering();
         super.onPause();
         int lastpos = 0;
         if (screen != null) {
@@ -647,17 +693,28 @@ public class DisplayActivity extends GvrActivity implements GvrView.StereoRender
 
     @Override
     public void onStop() {
+        panoWidgetView.pauseRendering();
         super.onStop();
     }
 
    @Override
     public void onDestroy() {
+       // Destroy the panorama widget and free memory.
+       panoWidgetView.shutdown();
+
+       // The background task has a 5 second timeout so it can potentially stay alive for 5 seconds
+       // after the activity is destroyed unless it is explicitly cancelled.
+       if (backgroundImageLoaderTask != null) {
+           backgroundImageLoaderTask.cancel(true);
+       }
+
        super.onDestroy();
    }
 
     @Override
     public void onResume() {
         super.onResume();
+        panoWidgetView.resumeRendering();
 
         if (orientationProvider != null) {
             orientationProvider.start();
@@ -741,6 +798,76 @@ public class DisplayActivity extends GvrActivity implements GvrView.StereoRender
         return m;
     }
 
+
+    /**
+     * Helper class to manage threading.
+     */
+    class ImageLoaderTask extends AsyncTask<Pair<Uri, Options>, Void, Boolean> {
+
+        /**
+         * Reads the bitmap from disk in the background and waits until it's loaded by pano widget.
+         */
+        @Override
+        protected Boolean doInBackground(Pair<Uri, Options>... fileInformation) {
+            Options panoOptions = null;  // It's safe to use null VrPanoramaView.Options.
+            InputStream istr = null;
+            if (fileInformation == null || fileInformation.length < 1
+                    || fileInformation[0] == null || fileInformation[0].first == null) {
+                AssetManager assetManager = getAssets();
+                try {
+                    istr = assetManager.open("pano.jpg");
+                    panoOptions = new Options();
+                    panoOptions.inputType = Options.TYPE_STEREO_OVER_UNDER;
+                } catch (IOException e) {
+                    Log.e(TAG, "Could not decode default bitmap: " + e);
+                    return false;
+                }
+            } else {
+                try {
+                    istr = new FileInputStream(new File(fileInformation[0].first.getPath()));
+                    panoOptions = fileInformation[0].second;
+                } catch (IOException e) {
+                    Log.e(TAG, "Could not load file: " + e);
+                    return false;
+                }
+            }
+
+            panoWidgetView.loadImageFromBitmap(BitmapFactory.decodeStream(istr), panoOptions);
+            try {
+                istr.close();
+            } catch (IOException e) {
+                Log.e(TAG, "Could not close input stream: " + e);
+            }
+
+            return true;
+        }
+    }
+
+    /**
+     * Listen to the important events from panorama widget.
+     */
+    private class ActivityEventListener extends VrPanoramaEventListener {
+        /**
+         * Called by pano widget on the UI thread when it's done loading the image.
+         */
+        @Override
+        public void onLoadSuccess() {
+            loadImageSuccessful = true;
+        }
+
+        /**
+         * Called by pano widget on the UI thread on any asynchronous error.
+         */
+        @Override
+        public void onLoadError(String errorMessage) {
+            loadImageSuccessful = false;
+            Toast.makeText(
+                    DisplayActivity.this, "Error loading pano: " + errorMessage, Toast.LENGTH_LONG)
+                    .show();
+            Log.e(TAG, "Error loading pano: " + errorMessage);
+        }
+    }
+
     // We receive all events from the Controller through this listener. In this example, our
     // listener handles both ControllerManager.EventListener and Controller.EventListener events.
     // This class is also a Runnable since the events will be reposted to the UI thread.
@@ -801,3 +928,4 @@ public class DisplayActivity extends GvrActivity implements GvrView.StereoRender
         }
     }
 }
+

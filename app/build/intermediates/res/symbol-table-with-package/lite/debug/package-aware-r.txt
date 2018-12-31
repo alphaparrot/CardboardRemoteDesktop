@@ -483,6 +483,7 @@ dimen activity_horizontal_margin
 dimen activity_vertical_margin
 dimen alignment_marker_height
 dimen alignment_marker_thickness
+dimen button_padding
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -656,7 +657,10 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable pen
+drawable quantum_ic_cardboard_white_24
 drawable quantum_ic_close_white_24
+drawable quantum_ic_fullscreen_white_24
+drawable quantum_ic_info_white_24
 drawable quantum_ic_settings_white_24
 drawable rippleable
 drawable screen_icon
@@ -721,6 +725,7 @@ id chronometer
 id collapseActionView
 id container
 id contentPanel
+id control_layout
 id custom
 id customPanel
 id dark
@@ -737,6 +742,8 @@ id end_padder
 id expand_activities_button
 id expanded_menu
 id forever
+id fullscreen_back_button
+id fullscreen_button
 id home
 id homeAsUp
 id icon
@@ -745,6 +752,7 @@ id icon_only
 id ifRoom
 id image
 id info
+id info_button
 id italic
 id item_touch_helper_previous_elevation
 id light
@@ -763,6 +771,7 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id overlay
+id pano_view
 id parentPanel
 id progress_circular
 id progress_horizontal
@@ -842,6 +851,8 @@ id up
 id useLogo
 id viewCheckBox
 id vncview
+id vr_mode_button
+id vrwidget_inner_view
 id wide
 id withText
 id wrap_content
@@ -914,6 +925,7 @@ layout tooltip
 layout transition_view
 layout ui_layer
 layout ui_layer_with_portrait_support
+layout ui_view_embed
 menu menu_edit
 menu menu_main
 menu menu_preferences
@@ -1201,6 +1213,7 @@ style Base_Widget_AppCompat_Toolbar_Button_Navigation
 style CardView
 style CardView_Dark
 style CardView_Light
+style ControlButton
 style GvrDialogTheme
 style NoSystemUI
 style Platform_AppCompat

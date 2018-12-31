@@ -50,4 +50,5 @@ dependencies {
     implementation 'com.google.android.gms:play-services-vision:12.0.0'
     implementation 'com.google.vr:sdk-base:1.130.0'
     implementation 'com.google.vr:sdk-controller:1.130.0'
+    implementation 'com.google.vr:sdk-panowidget:1.180.0'
 }

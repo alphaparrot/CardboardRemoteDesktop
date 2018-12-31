@@ -4,7 +4,7 @@
             "outputFile": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/incremental/mergeLiteDebugResources/merged.dir/values-v19/values-v19.xml",
             "map": [
                 {
-                    "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/values-v19/values.xml",
+                    "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.180.0.aar/6609af027ca32981f2eeda2457008a8f/res/values-v19/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

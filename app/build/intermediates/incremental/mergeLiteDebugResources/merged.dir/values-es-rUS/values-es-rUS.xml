@@ -19,8 +19,8 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Compartir con"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Compartir con %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Contraer"</string>
-    <string msgid="233061162317617848" name="back_button_content_description">"atrás"</string>
-    <string msgid="2401572676578172896" name="cancel_button">"Cancelar"</string>
+    <string name="back_button_content_description">atrás</string>
+    <string name="cancel_button">Cancelar</string>
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Habilitar"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> no funcionará a menos que habilites los servicios de Google Play."</string>
     <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Habilitar servicios de Google Play"</string>
@@ -39,26 +39,26 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Abrir en el teléfono"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Acceder"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Acceder con Google"</string>
-    <string msgid="2482357845034618478" name="dialog_button_got_it">"ENTENDIDO"</string>
-    <string msgid="4505853433204459373" name="dialog_button_open_help_center">"ABRIR EL CENTRO DE AYUDA"</string>
-    <string msgid="4028688231551615655" name="dialog_message_incompatible_phone">"Se requiere un teléfono compatible con Daydream. Visita el Centro de ayuda de Daydream para obtener más información."</string>
-    <string msgid="3560856374975640601" name="dialog_message_no_cardboard">"Obtén la app de Cardboard para configurar el visor."</string>
-    <string msgid="7887077605817014784" name="dialog_title">"Configurar"</string>
-    <string msgid="4515090705573059650" name="dialog_title_incompatible_phone">"Teléfono incompatible"</string>
-    <string msgid="2594928940370730859" name="dialog_title_vr_core_not_enabled">"Se requiere la configuración"</string>
-    <string msgid="6322165810291059770" name="dialog_title_vr_core_not_installed">"Se requiere la instalación"</string>
-    <string msgid="455961049302726493" name="dialog_title_warning">"Advertencia"</string>
-    <string msgid="1966424794507569244" name="dialog_vr_core_not_enabled">"Es posible que esta aplicación no funcione correctamente si no se habilitan los Servicios de RV de Google. Habilítalos en la configuración del teléfono antes de continuar."</string>
-    <string msgid="7122144659930752678" name="dialog_vr_core_not_installed">"Es posible que esta aplicación no funcione correctamente sin los Servicios de RV de Google. Instálalos desde Play Store antes de continuar."</string>
-    <string msgid="6145412853379876634" name="go_to_playstore_button">"Ir a Play Store"</string>
-    <string msgid="6878752668266068283" name="go_to_vr_listeners_settings_button">"Ir a Configuración"</string>
-    <string msgid="5324772199357788720" name="no_browser_text">"No hay ningún navegador para abrir el sitio web"</string>
-    <string msgid="2306297166333705530" name="place_your_phone_into_cardboard">"Coloca el teléfono en el visor Cardboard"</string>
-    <string msgid="5433369525545709510" name="place_your_viewer_into_viewer_format">"Coloca el teléfono en el visor <ns1:g id="VIEWER_NAME">%s</ns1:g>"</string>
+    <string name="dialog_button_got_it">ENTENDIDO</string>
+    <string name="dialog_button_open_help_center">ABRIR EL CENTRO DE AYUDA</string>
+    <string name="dialog_message_incompatible_phone">Se requiere un teléfono compatible con Daydream. Visita el Centro de ayuda de Daydream para obtener más información.</string>
+    <string name="dialog_message_no_cardboard">Obtén la app de Cardboard para configurar el visor.</string>
+    <string name="dialog_title">Configurar</string>
+    <string name="dialog_title_incompatible_phone">Teléfono incompatible</string>
+    <string name="dialog_title_vr_core_not_enabled">Se requiere la configuración</string>
+    <string name="dialog_title_vr_core_not_installed">Se requiere la instalación</string>
+    <string name="dialog_title_warning">Advertencia</string>
+    <string name="dialog_vr_core_not_enabled">Es posible que esta aplicación no funcione correctamente si no se habilitan los Servicios de RV de Google. Habilítalos en la configuración del teléfono antes de continuar.</string>
+    <string name="dialog_vr_core_not_installed">Es posible que esta aplicación no funcione correctamente sin los Servicios de RV de Google. Instálalos desde Play Store antes de continuar.</string>
+    <string name="go_to_playstore_button">Ir a Play Store</string>
+    <string name="go_to_vr_listeners_settings_button">Ir a Configuración</string>
+    <string name="no_browser_text">No hay ningún navegador para abrir el sitio web</string>
+    <string name="place_your_phone_into_cardboard">Coloca el teléfono en el visor Cardboard</string>
+    <string name="place_your_viewer_into_viewer_format">Coloca el teléfono en el visor %s</string>
     <string msgid="146198913615257606" name="search_menu_title">"Buscar"</string>
-    <string msgid="3719682527828378500" name="settings_button_content_description">"configuración"</string>
-    <string msgid="20964482303479393" name="setup_button">"Configuración"</string>
+    <string name="settings_button_content_description">configuración</string>
+    <string name="setup_button">Configuración</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
-    <string msgid="7856245902137004584" name="switch_viewer_action">"Cambiar"</string>
-    <string msgid="816514297101696447" name="switch_viewer_prompt">"¿Deseas usar otro visor?"</string>
+    <string name="switch_viewer_action">Cambiar</string>
+    <string name="switch_viewer_prompt">¿Deseas usar otro visor?</string>
 </resources>

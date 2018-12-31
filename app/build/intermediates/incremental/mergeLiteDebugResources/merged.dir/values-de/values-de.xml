@@ -19,8 +19,8 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Freigeben für"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Freigeben für %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Minimieren"</string>
-    <string msgid="233061162317617848" name="back_button_content_description">"Zurück"</string>
-    <string msgid="2401572676578172896" name="cancel_button">"Abbrechen"</string>
+    <string name="back_button_content_description">Zurück</string>
+    <string name="cancel_button">Abbrechen</string>
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Aktivieren"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> funktioniert erst nach der Aktivierung der Google Play-Dienste."</string>
     <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Google Play-Dienste aktivieren"</string>
@@ -39,26 +39,26 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Auf Smartphone öffnen"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Anmelden"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Über Google anmelden"</string>
-    <string msgid="2482357845034618478" name="dialog_button_got_it">"OK"</string>
-    <string msgid="4505853433204459373" name="dialog_button_open_help_center">"HILFE ÖFFNEN"</string>
-    <string msgid="4028688231551615655" name="dialog_message_incompatible_phone">"Du benötigst ein mit Daydream kompatibles Smartphone. Weitere Informationen findest du in der Daydream-Hilfe."</string>
-    <string msgid="3560856374975640601" name="dialog_message_no_cardboard">"Hol dir die Cardboard App zum Konfigurieren deines VR-Geräts."</string>
-    <string msgid="7887077605817014784" name="dialog_title">"Konfigurieren"</string>
-    <string msgid="4515090705573059650" name="dialog_title_incompatible_phone">"Smartphone nicht kompatibel"</string>
-    <string msgid="2594928940370730859" name="dialog_title_vr_core_not_enabled">"Einrichtung erforderlich"</string>
-    <string msgid="6322165810291059770" name="dialog_title_vr_core_not_installed">"Installation erforderlich"</string>
-    <string msgid="455961049302726493" name="dialog_title_warning">"Warnung"</string>
-    <string msgid="1966424794507569244" name="dialog_vr_core_not_enabled">"Diese App funktioniert möglicherweise nicht ordnungsgemäß, wenn Google VR Services nicht aktiviert ist. Aktiviere in den Einstellungen deines Smartphones Google VR Services, bevor du fortfährst."</string>
-    <string msgid="7122144659930752678" name="dialog_vr_core_not_installed">"Diese App funktioniert möglicherweise nicht ordnungsgemäß, wenn Google VR Services nicht installiert ist. Installiere vor dem Fortfahren Google VR Services aus dem Play Store."</string>
-    <string msgid="6145412853379876634" name="go_to_playstore_button">"Zum Play Store"</string>
-    <string msgid="6878752668266068283" name="go_to_vr_listeners_settings_button">"Zu den Einstellungen"</string>
-    <string msgid="5324772199357788720" name="no_browser_text">"Kein Browser zum Öffnen der Website gefunden"</string>
-    <string msgid="2306297166333705530" name="place_your_phone_into_cardboard">"Leg dein Smartphone in das Cardboard-Gerät ein"</string>
-    <string msgid="5433369525545709510" name="place_your_viewer_into_viewer_format">"Leg das Smartphone in das <ns1:g id="VIEWER_NAME">%s</ns1:g>-Gerät ein."</string>
+    <string name="dialog_button_got_it">OK</string>
+    <string name="dialog_button_open_help_center">HILFE ÖFFNEN</string>
+    <string name="dialog_message_incompatible_phone">Du benötigst ein mit Daydream kompatibles Smartphone. Weitere Informationen findest du in der Daydream-Hilfe.</string>
+    <string name="dialog_message_no_cardboard">Hol dir die Cardboard App zum Konfigurieren deines VR-Geräts.</string>
+    <string name="dialog_title">Konfigurieren</string>
+    <string name="dialog_title_incompatible_phone">Smartphone nicht kompatibel</string>
+    <string name="dialog_title_vr_core_not_enabled">Einrichtung erforderlich</string>
+    <string name="dialog_title_vr_core_not_installed">Installation erforderlich</string>
+    <string name="dialog_title_warning">Warnung</string>
+    <string name="dialog_vr_core_not_enabled">Diese App funktioniert möglicherweise nicht ordnungsgemäß, wenn Google VR Services nicht aktiviert ist. Aktiviere in den Einstellungen deines Smartphones Google VR Services, bevor du fortfährst.</string>
+    <string name="dialog_vr_core_not_installed">Diese App funktioniert möglicherweise nicht ordnungsgemäß, wenn Google VR Services nicht installiert ist. Installiere vor dem Fortfahren Google VR Services aus dem Play Store.</string>
+    <string name="go_to_playstore_button">Zum Play Store</string>
+    <string name="go_to_vr_listeners_settings_button">Zu den Einstellungen</string>
+    <string name="no_browser_text">Kein Browser zum Öffnen der Website gefunden</string>
+    <string name="place_your_phone_into_cardboard">Leg dein Smartphone in das Cardboard-Gerät ein</string>
+    <string name="place_your_viewer_into_viewer_format">Leg das Smartphone in das %s-Gerät ein.</string>
     <string msgid="146198913615257606" name="search_menu_title">"Suchen"</string>
-    <string msgid="3719682527828378500" name="settings_button_content_description">"Einstellungen"</string>
-    <string msgid="20964482303479393" name="setup_button">"Einrichtung"</string>
+    <string name="settings_button_content_description">Einstellungen</string>
+    <string name="setup_button">Einrichtung</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
-    <string msgid="7856245902137004584" name="switch_viewer_action">"Wechseln"</string>
-    <string msgid="816514297101696447" name="switch_viewer_prompt">"Gerät wechseln?"</string>
+    <string name="switch_viewer_action">Wechseln</string>
+    <string name="switch_viewer_prompt">Gerät wechseln?</string>
 </resources>

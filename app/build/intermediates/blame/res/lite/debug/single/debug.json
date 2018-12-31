@@ -13,7 +13,7 @@
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/layout-land_back_button.xml.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/layout-land/back_button.xml"
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.180.0.aar/6609af027ca32981f2eeda2457008a8f/res/layout-land/back_button.xml"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -22,6 +22,10 @@
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-mdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
         "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d5325e36e48c3ea14d72123e3c9fba25/res/drawable-mdpi-v4/abc_text_select_handle_left_mtrl_dark.png"
+    },
+    {
+        "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-mdpi-v4_quantum_ic_fullscreen_white_24.png.flat",
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-commonwidget-1.180.0.aar/5df8200817be13ab76c876b69a8188c0/res/drawable-mdpi-v4/quantum_ic_fullscreen_white_24.png"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/color-v23_abc_tint_switch_track.xml.flat",
@@ -49,7 +53,7 @@
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-v21_rippleable.xml.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/drawable-v21/rippleable.xml"
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.180.0.aar/6609af027ca32981f2eeda2457008a8f/res/drawable-v21/rippleable.xml"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/layout_abc_action_bar_title_item.xml.flat",
@@ -85,7 +89,7 @@
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/layout_ui_layer.xml.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/layout/ui_layer.xml"
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.180.0.aar/6609af027ca32981f2eeda2457008a8f/res/layout/ui_layer.xml"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-hdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -161,7 +165,7 @@
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/layout-ldrtl-v17_back_button.xml.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/layout-ldrtl-v17/back_button.xml"
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.180.0.aar/6609af027ca32981f2eeda2457008a8f/res/layout-ldrtl-v17/back_button.xml"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
@@ -256,6 +260,10 @@
         "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d5325e36e48c3ea14d72123e3c9fba25/res/drawable-xxxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-hdpi-v4_quantum_ic_cardboard_white_24.png.flat",
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-commonwidget-1.180.0.aar/5df8200817be13ab76c876b69a8188c0/res/drawable-hdpi-v4/quantum_ic_cardboard_white_24.png"
+    },
+    {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d5325e36e48c3ea14d72123e3c9fba25/res/drawable-xxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
     },
@@ -277,7 +285,7 @@
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/layout_ui_layer_with_portrait_support.xml.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/layout/ui_layer_with_portrait_support.xml"
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.180.0.aar/6609af027ca32981f2eeda2457008a8f/res/layout/ui_layer_with_portrait_support.xml"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/layout_tooltip.xml.flat",
@@ -285,7 +293,7 @@
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xxxhdpi-v4_quantum_ic_settings_white_24.png.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/drawable-xxxhdpi-v4/quantum_ic_settings_white_24.png"
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.180.0.aar/6609af027ca32981f2eeda2457008a8f/res/drawable-xxxhdpi-v4/quantum_ic_settings_white_24.png"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable_abc_btn_check_material.xml.flat",
@@ -326,6 +334,10 @@
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-mdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d5325e36e48c3ea14d72123e3c9fba25/res/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-hdpi-v4_quantum_ic_fullscreen_white_24.png.flat",
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-commonwidget-1.180.0.aar/5df8200817be13ab76c876b69a8188c0/res/drawable-hdpi-v4/quantum_ic_fullscreen_white_24.png"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable_common_google_signin_btn_text_dark.xml.flat",
@@ -390,6 +402,10 @@
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-v21_abc_action_bar_item_background_material.xml.flat",
         "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d5325e36e48c3ea14d72123e3c9fba25/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-mdpi-v4_quantum_ic_cardboard_white_24.png.flat",
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-commonwidget-1.180.0.aar/5df8200817be13ab76c876b69a8188c0/res/drawable-mdpi-v4/quantum_ic_cardboard_white_24.png"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -473,7 +489,7 @@
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-mdpi-v4_quantum_ic_settings_white_24.png.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/drawable-mdpi-v4/quantum_ic_settings_white_24.png"
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.180.0.aar/6609af027ca32981f2eeda2457008a8f/res/drawable-mdpi-v4/quantum_ic_settings_white_24.png"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -494,6 +510,10 @@
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xhdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d5325e36e48c3ea14d72123e3c9fba25/res/drawable-xhdpi-v4/abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xxhdpi-v4_quantum_ic_info_white_24.png.flat",
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-commonwidget-1.180.0.aar/5df8200817be13ab76c876b69a8188c0/res/drawable-xxhdpi-v4/quantum_ic_info_white_24.png"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/raw_light_vertex.shader.flat",
@@ -517,7 +537,7 @@
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xxhdpi-v4_quantum_ic_close_white_24.png.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/drawable-xxhdpi-v4/quantum_ic_close_white_24.png"
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-commonwidget-1.180.0.aar/5df8200817be13ab76c876b69a8188c0/res/drawable-xxhdpi-v4/quantum_ic_close_white_24.png"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/layout_common_ui.xml.flat",
@@ -550,6 +570,10 @@
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/menu_menu_main.xml.flat",
         "source": "/home/adiv/daydream/CardboardRemoteDesktop/app/src/main/res/menu/menu_main.xml"
+    },
+    {
+        "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-hdpi-v4_quantum_ic_info_white_24.png.flat",
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-commonwidget-1.180.0.aar/5df8200817be13ab76c876b69a8188c0/res/drawable-hdpi-v4/quantum_ic_info_white_24.png"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -649,7 +673,7 @@
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/layout_settings_button.xml.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/layout/settings_button.xml"
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.180.0.aar/6609af027ca32981f2eeda2457008a8f/res/layout/settings_button.xml"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/layout-v21_notification_action_tombstone.xml.flat",
@@ -784,16 +808,16 @@
         "source": "/home/adiv/daydream/CardboardRemoteDesktop/app/src/main/res/xml/preferences.xml"
     },
     {
-        "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xxhdpi-v4_quantum_ic_settings_white_24.png.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/drawable-xxhdpi-v4/quantum_ic_settings_white_24.png"
-    },
-    {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-hdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d5325e36e48c3ea14d72123e3c9fba25/res/drawable-hdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
+        "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xxhdpi-v4_quantum_ic_settings_white_24.png.flat",
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.180.0.aar/6609af027ca32981f2eeda2457008a8f/res/drawable-xxhdpi-v4/quantum_ic_settings_white_24.png"
+    },
+    {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-hdpi-v4_quantum_ic_close_white_24.png.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/drawable-hdpi-v4/quantum_ic_close_white_24.png"
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-commonwidget-1.180.0.aar/5df8200817be13ab76c876b69a8188c0/res/drawable-hdpi-v4/quantum_ic_close_white_24.png"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-ldrtl-mdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -806,6 +830,10 @@
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d5325e36e48c3ea14d72123e3c9fba25/res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xhdpi-v4_quantum_ic_fullscreen_white_24.png.flat",
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-commonwidget-1.180.0.aar/5df8200817be13ab76c876b69a8188c0/res/drawable-xhdpi-v4/quantum_ic_fullscreen_white_24.png"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -848,6 +876,10 @@
         "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d5325e36e48c3ea14d72123e3c9fba25/res/drawable-mdpi-v4/abc_list_longpressed_holo.9.png"
     },
     {
+        "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xxhdpi-v4_quantum_ic_cardboard_white_24.png.flat",
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-commonwidget-1.180.0.aar/5df8200817be13ab76c876b69a8188c0/res/drawable-xxhdpi-v4/quantum_ic_cardboard_white_24.png"
+    },
+    {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable_common_google_signin_btn_icon_dark_focused.xml.flat",
         "source": "/root/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.0.aar/7804ec325efc66fcde05f0fcae4f7d5a/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
     },
@@ -873,7 +905,7 @@
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/layout-ldrtl-land-v17_back_button.xml.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/layout-ldrtl-land-v17/back_button.xml"
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.180.0.aar/6609af027ca32981f2eeda2457008a8f/res/layout-ldrtl-land-v17/back_button.xml"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable_abc_ic_arrow_drop_right_black_24dp.xml.flat",
@@ -882,6 +914,10 @@
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d5325e36e48c3ea14d72123e3c9fba25/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xhdpi-v4_quantum_ic_info_white_24.png.flat",
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-commonwidget-1.180.0.aar/5df8200817be13ab76c876b69a8188c0/res/drawable-xhdpi-v4/quantum_ic_info_white_24.png"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xxxhdpi_ic_launcher.png.flat",
@@ -900,12 +936,12 @@
         "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d5325e36e48c3ea14d72123e3c9fba25/res/drawable-hdpi-v4/abc_list_divider_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-mdpi-v4_abc_ic_star_black_48dp.png.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d5325e36e48c3ea14d72123e3c9fba25/res/drawable-mdpi-v4/abc_ic_star_black_48dp.png"
-    },
-    {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d5325e36e48c3ea14d72123e3c9fba25/res/drawable-xxhdpi-v4/abc_ic_star_half_black_48dp.png"
+    },
+    {
+        "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-mdpi-v4_abc_ic_star_black_48dp.png.flat",
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d5325e36e48c3ea14d72123e3c9fba25/res/drawable-mdpi-v4/abc_ic_star_black_48dp.png"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-mdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
@@ -981,7 +1017,7 @@
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-mdpi-v4_quantum_ic_close_white_24.png.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/drawable-mdpi-v4/quantum_ic_close_white_24.png"
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-commonwidget-1.180.0.aar/5df8200817be13ab76c876b69a8188c0/res/drawable-mdpi-v4/quantum_ic_close_white_24.png"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -1050,6 +1086,10 @@
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-hdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d5325e36e48c3ea14d72123e3c9fba25/res/drawable-hdpi-v4/abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xxxhdpi-v4_quantum_ic_cardboard_white_24.png.flat",
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-commonwidget-1.180.0.aar/5df8200817be13ab76c876b69a8188c0/res/drawable-xxxhdpi-v4/quantum_ic_cardboard_white_24.png"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/anim_abc_shrink_fade_out_from_bottom.xml.flat",
@@ -1213,7 +1253,7 @@
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-mdpi-v4_transition.png.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/drawable-mdpi-v4/transition.png"
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.180.0.aar/6609af027ca32981f2eeda2457008a8f/res/drawable-mdpi-v4/transition.png"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/layout_notification_template_big_media_narrow.xml.flat",
@@ -1249,11 +1289,11 @@
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xhdpi-v4_quantum_ic_settings_white_24.png.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/drawable-xhdpi-v4/quantum_ic_settings_white_24.png"
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.180.0.aar/6609af027ca32981f2eeda2457008a8f/res/drawable-xhdpi-v4/quantum_ic_settings_white_24.png"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/layout-ldrtl-v17_settings_button.xml.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/layout-ldrtl-v17/settings_button.xml"
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.180.0.aar/6609af027ca32981f2eeda2457008a8f/res/layout-ldrtl-v17/settings_button.xml"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -1278,6 +1318,10 @@
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable_abc_list_selector_holo_light.xml.flat",
         "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d5325e36e48c3ea14d72123e3c9fba25/res/drawable/abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xhdpi-v4_quantum_ic_cardboard_white_24.png.flat",
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-commonwidget-1.180.0.aar/5df8200817be13ab76c876b69a8188c0/res/drawable-xhdpi-v4/quantum_ic_cardboard_white_24.png"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xxhdpi_ic_launcher.png.flat",
@@ -1385,7 +1429,7 @@
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/layout-land_ui_layer_with_portrait_support.xml.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/layout-land/ui_layer_with_portrait_support.xml"
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.180.0.aar/6609af027ca32981f2eeda2457008a8f/res/layout-land/ui_layer_with_portrait_support.xml"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/anim_abc_grow_fade_in_from_bottom.xml.flat",
@@ -1464,6 +1508,10 @@
         "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d5325e36e48c3ea14d72123e3c9fba25/res/drawable-xxhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
+        "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xxxhdpi-v4_quantum_ic_fullscreen_white_24.png.flat",
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-commonwidget-1.180.0.aar/5df8200817be13ab76c876b69a8188c0/res/drawable-xxxhdpi-v4/quantum_ic_fullscreen_white_24.png"
+    },
+    {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-mdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d5325e36e48c3ea14d72123e3c9fba25/res/drawable-mdpi-v4/abc_list_selector_disabled_holo_light.9.png"
     },
@@ -1480,8 +1528,12 @@
         "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d5325e36e48c3ea14d72123e3c9fba25/res/drawable-xxhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
+        "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xxxhdpi-v4_quantum_ic_info_white_24.png.flat",
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-commonwidget-1.180.0.aar/5df8200817be13ab76c876b69a8188c0/res/drawable-xxxhdpi-v4/quantum_ic_info_white_24.png"
+    },
+    {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xhdpi-v4_quantum_ic_close_white_24.png.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/drawable-xhdpi-v4/quantum_ic_close_white_24.png"
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-commonwidget-1.180.0.aar/5df8200817be13ab76c876b69a8188c0/res/drawable-xhdpi-v4/quantum_ic_close_white_24.png"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable_abc_btn_radio_material.xml.flat",
@@ -1556,6 +1608,10 @@
         "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d5325e36e48c3ea14d72123e3c9fba25/res/drawable/abc_ic_ab_back_material.xml"
     },
     {
+        "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xxhdpi-v4_quantum_ic_fullscreen_white_24.png.flat",
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-commonwidget-1.180.0.aar/5df8200817be13ab76c876b69a8188c0/res/drawable-xxhdpi-v4/quantum_ic_fullscreen_white_24.png"
+    },
+    {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
         "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d5325e36e48c3ea14d72123e3c9fba25/res/drawable-mdpi-v4/abc_text_select_handle_middle_mtrl_dark.png"
     },
@@ -1613,7 +1669,7 @@
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-hdpi-v4_transition.png.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/drawable-hdpi-v4/transition.png"
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.180.0.aar/6609af027ca32981f2eeda2457008a8f/res/drawable-hdpi-v4/transition.png"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-hdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
@@ -1630,6 +1686,10 @@
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d5325e36e48c3ea14d72123e3c9fba25/res/drawable-mdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/layout_ui_view_embed.xml.flat",
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-commonwidget-1.180.0.aar/5df8200817be13ab76c876b69a8188c0/res/layout/ui_view_embed.xml"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xxhdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -1665,7 +1725,7 @@
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/layout_transition_view.xml.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/layout/transition_view.xml"
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.180.0.aar/6609af027ca32981f2eeda2457008a8f/res/layout/transition_view.xml"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/layout_notification_template_part_time.xml.flat",
@@ -1673,7 +1733,7 @@
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xxxhdpi-v4_quantum_ic_close_white_24.png.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/drawable-xxxhdpi-v4/quantum_ic_close_white_24.png"
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-commonwidget-1.180.0.aar/5df8200817be13ab76c876b69a8188c0/res/drawable-xxxhdpi-v4/quantum_ic_close_white_24.png"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/layout_abc_alert_dialog_title_material.xml.flat",
@@ -1681,7 +1741,7 @@
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-hdpi-v4_quantum_ic_settings_white_24.png.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/drawable-hdpi-v4/quantum_ic_settings_white_24.png"
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.180.0.aar/6609af027ca32981f2eeda2457008a8f/res/drawable-hdpi-v4/quantum_ic_settings_white_24.png"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/layout_card_layout.xml.flat",
@@ -1733,7 +1793,11 @@
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/layout_back_button.xml.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/layout/back_button.xml"
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.180.0.aar/6609af027ca32981f2eeda2457008a8f/res/layout/back_button.xml"
+    },
+    {
+        "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-mdpi-v4_quantum_ic_info_white_24.png.flat",
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-commonwidget-1.180.0.aar/5df8200817be13ab76c876b69a8188c0/res/drawable-mdpi-v4/quantum_ic_info_white_24.png"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-hdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
@@ -1785,7 +1849,7 @@
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/layout-ldrtl-land-v17_settings_button.xml.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/layout-ldrtl-land-v17/settings_button.xml"
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.180.0.aar/6609af027ca32981f2eeda2457008a8f/res/layout-ldrtl-land-v17/settings_button.xml"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-hdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -1833,7 +1897,7 @@
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/layout-land_settings_button.xml.flat",
-        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.130.0.aar/4330bbff11cdb5c5900e9ebb69e6d3ca/res/layout-land/settings_button.xml"
+        "source": "/root/.gradle/caches/transforms-1/files-1.1/sdk-common-1.180.0.aar/6609af027ca32981f2eeda2457008a8f/res/layout-land/settings_button.xml"
     },
     {
         "merged": "/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/res/merged/lite/debug/drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",

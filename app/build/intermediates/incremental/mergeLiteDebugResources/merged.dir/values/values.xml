@@ -431,6 +431,7 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="alignment_marker_height">24mm</dimen>
     <dimen name="alignment_marker_thickness">2dip</dimen>
+    <dimen name="button_padding">10dip</dimen>
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
     <dimen name="cardview_default_elevation">2dp</dimen>
     <dimen name="cardview_default_radius">2dp</dimen>
@@ -495,6 +496,7 @@
     <item name="text2" type="id"/>
     <item name="title" type="id"/>
     <item name="up" type="id"/>
+    <item name="vrwidget_inner_view" type="id"/>
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="cancel_button_image_alpha">127</integer>
@@ -1716,6 +1718,12 @@
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
     </style>
+    <style name="ControlButton">
+<item name="android:layout_width">wrap_content</item>
+<item name="android:background">@android:color/transparent</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:padding">@dimen/button_padding</item>
+</style>
     <style name="GvrDialogTheme" parent="@android:style/Theme.Holo.Light.Dialog">
 <item name="android:windowBackground">@android:color/transparent</item>
 </style>
