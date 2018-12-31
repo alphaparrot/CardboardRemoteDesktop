@@ -1,0 +1,4 @@
+#Sat Dec 29 21:41:08 CST 2018
+base.0=/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/transforms/dexMerger/lite/debug/8
+path.0=classes.dex
+renamed.0=classes.dex

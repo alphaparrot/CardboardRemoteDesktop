@@ -35,7 +35,7 @@
         <!--chai:unitsLeft=""-->
         <!--chai:unitsRight="%"/>-->
     <EditTextPreference
-        android:defaultValue="#88111111"
+        android:defaultValue="#fef2ff"
         android:key="pref_bgColor"
         android:title="@string/pref_bgColor_title"
         android:summary="@string/pref_bgColor_summary"/>

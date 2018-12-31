@@ -10,7 +10,7 @@ android {
         }
     }
     compileSdkVersion 26
-    buildToolsVersion '26.0.2'
+    buildToolsVersion '28.0.3'
     defaultConfig {
         applicationId "se.chai.cardboardremotedesktop"
         minSdkVersion 26
@@ -41,13 +41,13 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support:cardview-v7:26.1.0'
     implementation 'com.android.support:recyclerview-v7:26.1.0'
     //noinspection GradleDynamicVersion
     //    compile files('libs/cardboard.jar')
     implementation 'com.google.android.gms:play-services-vision:12.0.0'
-    compile 'com.google.vr:sdk-base:1.130.0'
-    compile 'com.google.vr:sdk-controller:1.130.0'
+    implementation 'com.google.vr:sdk-base:1.130.0'
+    implementation 'com.google.vr:sdk-controller:1.130.0'
 }
