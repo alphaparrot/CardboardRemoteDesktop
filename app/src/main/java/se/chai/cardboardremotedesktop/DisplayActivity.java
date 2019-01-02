@@ -236,7 +236,7 @@ public class DisplayActivity extends GvrActivity implements GvrView.StereoRender
         b = Color.blue(bgColor)/255f;
         a = Color.alpha(bgColor)/255f;
 
-        panoWidgetView = (VrPanoramaView) findViewById(R.id.pano_view);
+        panoWidgetView = (VrPanoramaView) findViewById(R.id.pano_view); //For some reason this is a null reference?
         panoWidgetView.setEventListener(new ActivityEventListener());
 
         setContentView(R.layout.common_ui);

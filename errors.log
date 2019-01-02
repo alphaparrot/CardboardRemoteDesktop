@@ -30,3 +30,69 @@
         at java.lang.reflect.Method.invoke(Native Method) 
         at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493) 
         at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+2018-12-31 17:24:27.952 31477-31489/? E/System: Uncaught exception thrown by finalizer
+2018-12-31 17:24:27.956 31477-31489/? E/System: java.lang.NullPointerException: Attempt to read from field 'com.google.android.gms.common.api.Result com.google.android.gms.internal.zzys.zzaJp' on a null object reference
+        at com.google.android.gms.internal.zzys.zza(Unknown Source:0)
+        at com.google.android.gms.internal.zzys$zzb.finalize(Unknown Source:2)
+        at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+        at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+        at java.lang.Daemons$Daemon.run(Daemons.java:103)
+        at java.lang.Thread.run(Thread.java:764)
+2018-12-31 17:24:27.956 31477-31489/? E/System: Uncaught exception thrown by finalizer
+2018-12-31 17:24:27.956 31477-31489/? E/System: java.lang.NullPointerException: Attempt to read from field 'com.google.android.gms.common.api.Result com.google.android.gms.internal.zzys.zzaJp' on a null object reference
+        at com.google.android.gms.internal.zzys.zza(Unknown Source:0)
+        at com.google.android.gms.internal.zzys$zzb.finalize(Unknown Source:2)
+        at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+        at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+        at java.lang.Daemons$Daemon.run(Daemons.java:103)
+        at java.lang.Thread.run(Thread.java:764)
+2018-12-31 17:24:27.956 31477-31489/? E/System: Uncaught exception thrown by finalizer
+2018-12-31 17:24:27.956 31477-31489/? E/System: java.lang.NullPointerException: Attempt to read from field 'com.google.android.gms.common.api.Result com.google.android.gms.internal.zzys.zzaJp' on a null object reference
+        at com.google.android.gms.internal.zzys.zza(Unknown Source:0)
+        at com.google.android.gms.internal.zzys$zzb.finalize(Unknown Source:2)
+        at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+        at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+        at java.lang.Daemons$Daemon.run(Daemons.java:103)
+        at java.lang.Thread.run(Thread.java:764)
+2018-12-31 17:24:27.956 31477-31489/? E/System: Uncaught exception thrown by finalizer
+2018-12-31 17:24:27.957 31477-31489/? E/System: java.lang.NullPointerException: Attempt to read from field 'com.google.android.gms.common.api.Result com.google.android.gms.internal.zzys.zzaJp' on a null object reference
+        at com.google.android.gms.internal.zzys.zza(Unknown Source:0)
+        at com.google.android.gms.internal.zzys$zzb.finalize(Unknown Source:2)
+        at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+        at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+        at java.lang.Daemons$Daemon.run(Daemons.java:103)
+        at java.lang.Thread.run(Thread.java:764)
+2018-12-31 17:24:27.957 31477-31489/? E/System: Uncaught exception thrown by finalizer
+2018-12-31 17:24:27.957 31477-31489/? E/System: java.lang.NullPointerException: Attempt to read from field 'com.google.android.gms.common.api.Result com.google.android.gms.internal.zzys.zzaJp' on a null object reference
+        at com.google.android.gms.internal.zzys.zza(Unknown Source:0)
+        at com.google.android.gms.internal.zzys$zzb.finalize(Unknown Source:2)
+        at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+        at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+        at java.lang.Daemons$Daemon.run(Daemons.java:103)
+        at java.lang.Thread.run(Thread.java:764)
+2018-12-31 17:24:27.957 31477-31489/? E/System: Uncaught exception thrown by finalizer
+2018-12-31 17:24:27.957 31477-31489/? E/System: java.lang.NullPointerException: Attempt to read from field 'com.google.android.gms.common.api.Result com.google.android.gms.internal.zzys.zzaJp' on a null object reference
+        at com.google.android.gms.internal.zzys.zza(Unknown Source:0)
+        at com.google.android.gms.internal.zzys$zzb.finalize(Unknown Source:2)
+        at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+        at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+        at java.lang.Daemons$Daemon.run(Daemons.java:103)
+        at java.lang.Thread.run(Thread.java:764)
+2018-12-31 17:24:27.957 31477-31489/? E/System: Uncaught exception thrown by finalizer
+2018-12-31 17:24:27.957 31477-31489/? E/System: java.lang.NullPointerException: Attempt to read from field 'com.google.android.gms.common.api.Result com.google.android.gms.internal.zzys.zzaJp' on a null object reference
+        at com.google.android.gms.internal.zzys.zza(Unknown Source:0)
+        at com.google.android.gms.internal.zzys$zzb.finalize(Unknown Source:2)
+        at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+        at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+        at java.lang.Daemons$Daemon.run(Daemons.java:103)
+        at java.lang.Thread.run(Thread.java:764)
+2018-12-31 17:24:27.957 31477-31489/? E/System: Uncaught exception thrown by finalizer
+2018-12-31 17:24:27.957 31477-31489/? E/System: java.lang.NullPointerException: Attempt to read from field 'com.google.android.gms.common.api.Result com.google.android.gms.internal.zzys.zzaJp' on a null object reference
+        at com.google.android.gms.internal.zzys.zza(Unknown Source:0)
+        at com.google.android.gms.internal.zzys$zzb.finalize(Unknown Source:2)
+        at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+        at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+        at java.lang.Daemons$Daemon.run(Daemons.java:103)
+        at java.lang.Thread.run(Thread.java:764)

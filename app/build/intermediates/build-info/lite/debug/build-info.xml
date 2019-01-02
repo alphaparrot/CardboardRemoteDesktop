@@ -2,65 +2,30 @@
 <instant-run
     abi="arm64-v8a,armeabi-v7a,armeabi"
     api-level="28"
-    build-mode="FULL"
+    build-mode="COLD"
     format="10"
+    ir-eligibility="METHOD_DELETED"
     plugin-version="3.2.1"
-    timestamp="1546293742305"
+    timestamp="1546295055530"
     token="3380863427262996791"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="907" />
+        duration="168" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="860" />
+        duration="33" />
     <task
         name="verifier"
-        duration="48" />
+        duration="22" />
 
-    <artifact
-        location="/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/resources/instant-run/lite/debug/resources-lite-debug.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/split-apk/lite/debug/dep/dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/split-apk/lite/debug/slices/slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/split-apk/lite/debug/slices/slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/split-apk/lite/debug/slices/slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/split-apk/lite/debug/slices/slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/split-apk/lite/debug/slices/slice_0.apk"
-        type="SPLIT" />
     <artifact
         location="/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/split-apk/lite/debug/slices/slice_1.apk"
         type="SPLIT" />
-    <artifact
-        location="/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/split-apk/lite/debug/slices/slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/split-apk/lite/debug/slices/slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/split-apk/lite/debug/slices/slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/split-apk/lite/debug/slices/slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/instant-run-apk/lite/debug/app-lite-debug.apk"
-        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
@@ -105,6 +70,15 @@
         <artifact
             location="/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/instant-run-apk/lite/debug/app-lite-debug.apk"
             type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="METHOD_DELETED"
+        timestamp="1546295055530"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/adiv/daydream/CardboardRemoteDesktop/app/build/intermediates/split-apk/lite/debug/slices/slice_1.apk"
+            type="SPLIT" />
     </build>
 
 </instant-run>
